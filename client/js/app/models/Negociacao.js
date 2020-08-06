@@ -3,7 +3,7 @@ class Negociacao{
     this._data = data;
     this._quantidade = quantidade;
     this._valor = valor;
-    Object.freeze(this);
+    Object.freeze(this); //avoids changes in the object after freezing
   }
   get volume(){
     return this._quantidade * this._valor;
